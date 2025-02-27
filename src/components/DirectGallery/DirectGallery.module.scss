@@ -1,0 +1,30 @@
+// src/components/DirectGallery/DirectGallery.module.scss
+@use '@/styles/scss/variables' as *;
+
+.galleryContainer {
+  container-type: inline-size;
+  width: 100%;
+}
+
+.gallery {
+  @container (max-width: 768px) {
+    padding: 0;
+    
+    .imageWrapper {
+      padding: 2%;
+    }
+    
+    .thumbnail {
+      width: 100%;
+      height: auto;
+      padding: 0.3rem;
+      background-color: $color-background-alt;
+      border: solid 1px $color-border;
+      border-radius: 2px;
+    }
+  }
+
+  @container (min-width: 769px) {
+    display: none;  // Hide direct gallery in desktop mode
+  }
+}

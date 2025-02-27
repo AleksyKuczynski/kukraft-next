@@ -1,0 +1,152 @@
+// src/app/page.module.scss
+
+@use '@/styles/scss/variables' as *;
+
+.homepage {
+  background-color: $color-background;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 5rem;
+  text-align: center;
+}
+
+.kklogo {
+  width: 160px;
+  
+  @media (min-width: 360px) {
+    width: 205px;
+  }
+  @media (min-width: 576px) {
+    width: 275px;
+  }
+}
+
+.main {
+  flex: 1;
+}
+
+.gridContainer {
+  max-width: 1320px; // Bootstrap's xxl container width
+  margin: 0 auto;
+  padding: 0 0.75rem;
+  
+  @media (max-width: 1400px) {
+    max-width: 1140px;
+  }
+  @media (max-width: 1200px) {
+    max-width: 960px;
+  }
+  @media (max-width: 992px) {
+    max-width: 720px;
+  }
+  @media (max-width: 768px) {
+    max-width: 540px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.categoryLink {
+  position: relative;
+  width: 100%;
+  
+  &::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+.button {
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0.75rem;
+  padding: 0.3rem;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    opacity: 1;
+    border-radius: 1rem;
+  }
+  
+  &:active {
+    opacity: 0.75;
+  }
+}
+
+.footer {
+  padding-top: 8rem;
+}
+
+.footerContainer {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.footerIcons {
+  display: none;
+  
+  @media (min-width: 576px) {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 2rem 0;
+  }
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 48px;
+  height: 48px;
+}
+
+.copyrightRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  .copyrightText {
+    color: $color-primary;
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding: 0.2rem 1rem;
+  }
+
+  .separator {
+    width: 28px;
+    height: 28px;
+    background-image: url('/img/kk.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: none;
+
+    @media (min-width: 576px) {
+      display: block;
+    }
+  }
+}

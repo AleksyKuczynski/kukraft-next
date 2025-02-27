@@ -1,0 +1,262 @@
+// src/components/ImageModal/ImageModal.module.scss
+@use '@/styles/scss/variables' as *;
+
+// Common offcanvas styles
+.offcanvas {
+  background-color: $color-background;
+  border-left: solid $color-primary 1px;
+  width: 100%;
+  --bs-offcanvas-width: 100%;
+  
+  @media (orientation: landscape) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  :global(.offcanvas-header) {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 1.35rem;
+    
+    @media (orientation: landscape) {
+      display: block;
+      width: 67px;
+      padding: 0;
+    }
+  }
+  
+  :global(.offcanvas-body) {
+    padding: 0;
+    
+    @media (orientation: landscape) {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+// Size variants
+.offcanvasCompact {
+  @media (orientation: landscape) {
+    width: 388px;
+    --bs-offcanvas-width: 388px;
+    
+    @media (min-height: 320px) { 
+      width: 428px; 
+      --bs-offcanvas-width: 428px;
+    }
+    @media (min-height: 360px) { 
+      width: 468px; 
+      --bs-offcanvas-width: 468px;
+    }
+    @media (min-height: 384px) { 
+      width: 492px; 
+      --bs-offcanvas-width: 492px;
+    }
+    @media (min-height: 411px) { 
+      width: 519px; 
+      --bs-offcanvas-width: 519px;
+    }
+    @media (min-height: 540px) { 
+      width: 648px; 
+      --bs-offcanvas-width: 648px;
+    }
+    @media (min-height: 720px) { 
+      width: 828px; 
+      --bs-offcanvas-width: 828px;
+    }
+    @media (min-height: 768px) { 
+      width: 876px; 
+      --bs-offcanvas-width: 876px;
+    }
+    @media (min-height: 810px) { 
+      width: 918px; 
+      --bs-offcanvas-width: 918px;
+    }
+    @media (min-height: 992px) { 
+      width: 1100px; 
+      --bs-offcanvas-width: 1100px;
+    }
+    @media (min-height: 1200px) { 
+      width: 1308px; 
+      --bs-offcanvas-width: 1308px;
+    }
+  }
+}
+
+.offcanvasLarge {
+  @media (orientation: landscape) {
+    width: 800px;
+    --bs-offcanvas-width: 800px;
+    
+    @media (min-height: 375px) { 
+      width: 833px; 
+      --bs-offcanvas-width: 833px;
+    }
+    @media (min-height: 384px) { 
+      width: 853px; 
+      --bs-offcanvas-width: 853px;
+    }
+    @media (min-height: 390px) { 
+      width: 858px; 
+      --bs-offcanvas-width: 858px;
+    }
+    @media (min-height: 411px) { 
+      width: 904px; 
+      --bs-offcanvas-width: 904px;
+    }
+    @media (min-height: 428px) { 
+      width: 941px; 
+      --bs-offcanvas-width: 941px;
+    }
+    @media (min-height: 540px) { 
+      width: 1188px; 
+      --bs-offcanvas-width: 1188px;
+    }
+    @media (min-height: 768px) { 
+      width: 1689px; 
+      --bs-offcanvas-width: 1689px;
+    }
+  }
+}
+
+// Close button
+.btnClose {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 2rem;
+  width: 15%;
+  display: block;
+  
+  img {
+    height: 24px;
+  }
+  
+  @media (orientation: landscape) {
+    margin: 2rem 0;
+    width: 100%;
+  }
+}
+
+// Simple image in offcanvas
+.imgOffcanvas {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 97%;
+  height: 96%;
+  margin: 1.5%;
+}
+
+// Carousel styles
+.carousel {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+  
+  @media (orientation: landscape) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+  }
+  
+  :global(.carousel-inner) {
+    display: flex;
+    align-items: center;
+    
+    &::after {
+      display: flex;
+      align-items: center;
+    }
+    
+    @media (orientation: landscape) {
+      display: block;
+      width: 278px;
+      
+      @media (min-height: 320px) { width: 318px; }
+      @media (min-height: 360px) { width: 358px; }
+      @media (min-height: 384px) { width: 382px; }
+      @media (min-height: 411px) { width: 409px; }
+      @media (min-height: 540px) { width: 538px; }
+      @media (min-height: 720px) { width: 718px; }
+      @media (min-height: 768px) { width: 766px; }
+      @media (min-height: 810px) { width: 808px; }
+      @media (min-height: 992px) { width: 990px; }
+      @media (min-height: 1200px) { width: 1198px; }
+    }
+  }
+}
+
+// Carousel image
+.imgCarousel {
+  width: 97%;
+  height: 96%;
+  margin: 1.5%;
+  object-fit: contain;
+  display: flex;
+}
+
+// Carousel controls
+.carouselControlPrev, .carouselControlNext {
+  position: relative;
+  display: block;
+  border: none;
+  background-color: transparent;
+  margin: 0 2rem;
+  width: 15%;
+  
+  img {
+    height: 24px;
+  }
+  
+  @media (orientation: landscape) {
+    margin: 2rem 0;
+    width: 100%;
+    
+    img {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+// Carousel indicators
+.carouselIndicators {
+  position: inherit;
+  margin: 0 auto;
+  
+  :global([data-bs-target]) {
+    box-sizing: content-box;
+    width: 0.5rem !important;
+    height: 0.5rem !important;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    background-color: $color-primary !important;
+    border: 0 !important;
+    border-radius: 50% !important;
+    padding: 0;
+    flex: 0 1 auto;
+    opacity: 0.5;
+    transition: opacity 0.6s ease;
+  }
+  
+  :global(button.active) {
+    opacity: 1;
+  }
+  
+  @media (orientation: landscape) {
+    display: block;
+    width: 30px;
+    margin: 0;
+    
+    :global(button) {
+      display: block;
+      margin: 2rem 0;
+    }
+  }
+}

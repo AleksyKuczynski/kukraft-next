@@ -1,0 +1,164 @@
+// src/app/(sections)/layout.module.scss
+@use '@/styles/scss/variables' as *;
+
+// Header & Navigation
+.navbar {
+  padding-top: 0;
+  opacity: 0.89;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  padding-bottom: 0.5rem;
+  background-color: $color-background;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 1.5rem;
+  background-size: 64px;
+  touch-action: pan-y;
+}
+
+.navLink {
+  padding-right: 1rem;
+  padding-left: 2rem;
+  color: $color-primary;
+  padding: 0;
+  border-bottom: solid $color-primary 1px;
+
+  &:hover {
+    color: $color-text;
+    border-color: $color-text;
+  }
+
+  &:active {
+    color: $color-primary;
+    border-color: $color-primary;
+  }
+}
+
+.navLinkActive {
+  padding-bottom: 0;
+  border-bottom: solid 3px;
+  
+  &:hover {
+    cursor: default;
+  }
+}
+
+.navBrand {
+  padding: 1rem 2rem 1rem 2rem;
+
+  &:hover {
+    color: $color-text;
+  }
+}
+
+.navItem {
+  padding: .5rem 2rem .5rem 0;
+}
+
+.navToggler {
+  margin-right: 2rem;
+  padding: 0;
+  border: 0;
+
+  img {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+// Main Section
+.mainSection {
+  padding: 5rem 0 1rem;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentRow {
+  padding: 1.5rem;
+  padding-top: 2.5rem;
+  text-align: center;
+}
+
+// Footer
+.footer {
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.footerContainer {
+  background-color: $color-background-alt;
+  border-top: solid $color-border 1px;
+  margin: 0;
+  padding: 1rem;
+}
+
+.footerText {
+  margin: 1rem;
+  padding: 0.2rem 1rem;
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+.footerSeparator {
+  display: none;
+  background-image: url('/img/kk.svg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 28px;
+}
+
+// Media Queries
+@media (min-height: 640px) {
+  .navbar {
+    font-size: 15px;
+  }
+  
+  .navItem {
+    padding: 1rem 2rem .5rem 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    margin: 0;
+    font-size: 15px;
+    background-image: none;
+  }
+
+  .navBrand {
+    margin: 0;
+    padding: 0.4rem 0 0 2rem;
+  }
+
+  .navItem {
+    padding: 1rem 0 0 1.5rem;
+  }
+
+  .navLink {
+    padding: 0;
+    border-bottom: solid $color-primary 1px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .footerContainer {
+    margin: 0;
+  }
+
+  .footerSeparator {
+    display: block;
+  }
+
+  .footerRow {
+    padding: 2rem 0;
+  }
+
+  .footerText {
+    padding: 0 1rem;
+    font-size: .8rem;
+  }
+}

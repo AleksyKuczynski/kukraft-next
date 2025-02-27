@@ -1,0 +1,33 @@
+// src/app/(sections)/(gallery)/layout.module.scss
+@use '@/styles/scss/variables' as *;
+
+.galleryContainer {
+  container-type: inline-size;
+  width: 100%;
+}
+
+.content {
+  @container (max-width: 768px) {
+    padding: 0;
+    
+    :global(.masonry-grid) {
+      display: none;
+    }
+    
+    :global(.direct-gallery) {
+      display: block;
+    }
+  }
+
+  @container (min-width: 769px) {
+    padding: 0 5%;
+    
+    :global(.masonry-grid) {
+      display: block;
+    }
+    
+    :global(.direct-gallery) {
+      display: none;
+    }
+  }
+}

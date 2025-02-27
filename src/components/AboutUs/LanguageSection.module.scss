@@ -1,0 +1,35 @@
+// src/components/AboutUs/LanguageSection.module.scss
+.sideSection {
+    display: flex;
+    
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+      flex-direction: column;
+    }
+    
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+    }
+  }
+  
+  // src/app/about-us/page.module.scss
+  .langSelector {
+    padding: 1rem 0;
+    text-align: start;
+    
+    a {
+      margin-left: 1.5rem;
+      border: solid 2px var(--colr-1);
+      padding: 1rem 2.5rem;
+      border-radius: 5rem;
+      text-decoration: none;
+      color: var(--colr-1);
+      font-weight: 700;
+      
+      @media (max-width: 360px) {
+        margin-left: 1.5rem;
+        border-width: 1px;
+        padding: 1rem 1.5rem;
+        font-weight: 400;
+      }
+    }
+  }

@@ -1,0 +1,45 @@
+// src/components/ImageTile/ImageTile.module.scss
+@use '@/styles/scss/variables' as *;
+
+.imageWrapper {
+  break-inside: avoid;
+  padding: 5%;
+  
+  @media (max-width: 575.98px) {
+    padding: 2%;
+  }
+}
+
+.imageButton {
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  background-color: $color-background-alt;
+  border: solid 1px $color-border;
+  border-radius: 2px;
+  
+  &.compact {
+    padding: 0.5rem;
+  }
+  
+  &.standard {
+    padding: 2.5rem;
+  }
+  
+  &.wide {
+    padding: 5rem;
+  }
+  
+  @media (max-width: 575.98px) {
+    &.compact, &.standard, &.wide {
+      padding: 0.5rem;
+    }
+  }
+}

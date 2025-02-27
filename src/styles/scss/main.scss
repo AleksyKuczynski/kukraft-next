@@ -1,0 +1,22 @@
+// src/styles/scss/main.scss
+
+@use '@/styles/scss/variables' as *;
+
+// Import Bootstrap first
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Base reset styles
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: $color-primary;
+  background-color: $color-background;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+}

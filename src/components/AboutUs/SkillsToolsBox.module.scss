@@ -1,0 +1,44 @@
+// src/components/AboutUs/SkillsToolsBox.module.scss
+@use '@/styles/scss/variables' as *;
+
+.container {
+  list-style: none;
+  display: block;
+  padding: 5%;
+  aspect-ratio: 1 / 1;
+  color: $color-text;
+  border: solid 1px $color-border;
+}
+
+.skillsRotation {
+  margin: 5%;
+  transform: rotate(-5deg);
+  background-color: $color-logo;
+}
+
+.toolsRotation {
+  margin: 0%;
+  transform: rotate(10deg);
+  background-color: $color-arts;
+}
+
+.title {
+  transform: rotate(-15deg);
+  font-size: 1.5rem;
+  text-align: start;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  padding-top: 0.25rem;
+}
+
+@media (max-width: 1199.98px) {
+  .container {
+    margin: 1rem 0;
+  }
+}

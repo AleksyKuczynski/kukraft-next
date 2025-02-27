@@ -1,0 +1,44 @@
+// src/components/GalleryPage/GalleryPage.module.scss
+@use '@/styles/scss/variables' as *;
+
+.galleryContainer {
+  width: 100%;
+
+  :global(.direct-gallery) {
+    .imageWrapper {
+      padding: 2%;
+    }
+
+    .thumbnail {
+      width: 100%;
+      height: auto;
+      padding: 0.3rem;
+      background-color: $color-background-alt;
+      border: solid 1px $color-border;
+      border-radius: 2px;
+    }
+  }
+
+  :global(.masonry-grid) {
+    .imageWrapper {
+      padding: 5%;
+    }
+
+    .thumbnail {
+      width: 100%;
+      height: auto;
+      padding: 2.5rem;
+      background-color: $color-background-alt;
+      border: solid 1px $color-border;
+      border-radius: 2px;
+
+      &.simple {
+        padding: 5rem;
+      }
+
+      &.complicated {
+        padding: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+// src/styles/modules/categories.module.scss
+@use '@/styles/scss/variables' as *;
+
+// Mixin for category styling
+@mixin category-style($color) {
+  &.button {
+    background-color: $color;
+  }
+  
+  &.active-nav {
+    font-style: italic;
+    font-weight: 400;
+    color: $color !important;
+    border-color: $color !important;
+    cursor: default;
+    
+    &:hover {
+      color: $color !important;
+      border-color: $color !important;
+    }
+  }
+}
+
+// Category classes
+.vector { @include category-style($color-vector); }
+.books { @include category-style($color-books); }
+.brand { @include category-style($color-brand); }
+.icons { @include category-style($color-icons); }
+.pattern { @include category-style($color-pattern); }
+.logo { @include category-style($color-logo); }
+.web { @include category-style($color-web); }
+.arts { @include category-style($color-arts); }
+.slide { @include category-style($color-slide); }
+.toys { @include category-style($color-toys); }
+.greeting { @include category-style($color-greeting); }
+.about { @include category-style($color-aboutus); }
+
+// Button base class for homepage
+.button {
+  opacity: 0.85;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    opacity: 1;
+    border-radius: 0;
+  }
+}

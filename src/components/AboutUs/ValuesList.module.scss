@@ -1,0 +1,48 @@
+// src/components/AboutUs/ValuesList.module.scss
+@use '@/styles/scss/variables' as *;
+
+.aboutUsChat {
+  background-color: $color-background-alt;
+  padding: 2rem;
+  border: solid 1px $color-border;
+  border-radius: 1.5rem;
+  list-style: none;
+}
+
+.mainHeading {
+  display: block;
+  margin-bottom: 4rem;
+  color: $color-text;
+  font-size: 1.5rem;
+  padding: 0.75rem;
+  border-radius: 1.5rem;
+  background-color: $color-primary;
+  text-align: center;
+}
+
+.subHeading {
+  font-size: 1.1rem;
+  font-weight: bold;
+  min-height: 3rem;
+  margin-top: 1.5rem;
+  padding-left: 7rem;
+  background: url('/img/sections/aboutus/duo.png') no-repeat 0;
+  background-size: auto 3rem;
+}
+
+.valueItem {
+  display: block;
+  min-height: 3rem;
+  margin-top: 1.5rem;
+  padding-left: 5rem;
+
+  &:nth-child(even) {
+    background: url('/img/sections/aboutus/aleh.png') no-repeat 0;
+    background-size: auto 3rem;
+  }
+
+  &:nth-child(odd) {
+    background: url('/img/sections/aboutus/nat.png') no-repeat 0;
+    background-size: auto 3rem;
+  }
+}

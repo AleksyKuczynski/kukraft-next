@@ -1,0 +1,45 @@
+// src/app/(sections)/greeting-cards/styles.module.scss
+.wholeCard {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .cardBox {
+    width: 100%;
+  }
+  
+  .cardContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .cardImage {
+    padding: 1%;
+    
+    img {
+      max-width: 100%;
+    }
+  }
+  
+  .dividerBox {
+    width: 100%;
+    padding: 2% 0 5% 0;
+    
+    div {
+      display: inline-block;
+      width: 25%;
+      
+      img {
+        height: 3rem;
+      }
+    }
+    
+    @media (max-width: 575.98px) {
+      div img {
+        height: 2rem;
+      }
+    }
+  }

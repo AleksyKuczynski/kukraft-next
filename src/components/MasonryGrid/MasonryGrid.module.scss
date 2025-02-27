@@ -1,0 +1,35 @@
+// src/components/MasonryGrid/MasonryGrid.module.scss
+@use '@/styles/scss/variables' as *;
+
+.gridContainer {
+  padding: 0 5%;
+  
+  @media (max-width: 575.98px) {
+    padding: 0;
+  }
+}
+
+.masonryGrid {
+  column-count: 1;
+  column-gap: 0;
+  
+  @media (min-width: 576px) {
+    column-count: 2;
+  }
+}
+
+.gridFour {
+  @media (min-width: 768px) {
+    column-count: 3;
+  }
+  
+  @media (min-width: 992px) {
+    column-count: 4;
+  }
+}
+
+.gridTwo {
+  @media (min-width: 992px) {
+    column-count: 2;
+  }
+}

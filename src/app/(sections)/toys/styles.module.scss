@@ -1,0 +1,23 @@
+// src/app/(sections)/toys/styles.module.scss
+@use '@/styles/scss/variables' as *;
+
+.toysSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 200px); // Account for header/footer
+}
+
+.imageWrapper {
+  max-width: 600px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.constructionImage {
+  width: 100%;
+  height: auto;
+  fill: $color-toys; // Apply category color to SVG
+  color: $color-toys;
+}
