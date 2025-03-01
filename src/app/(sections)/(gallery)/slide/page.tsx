@@ -8,35 +8,35 @@ const slideData: SectionData = {
   description: "Slide decks and presentation portfolio",
   images: [
     {
-      src: "02.png",
+      src: "02.webp",
       alt: "Algae presentation (project 2022)",
       style: "standard",
       behavior: "carousel",
       gallery: [
-        "02.1.jpg",
-        "02.2.jpg",
-        "02.3.jpg",
-        "02.4.jpg",
-        "02.5.jpg",
-        "02.6.jpg",
-        "02.7.jpg",
-        "02.8.jpg",
-        "02.9.jpg"
+        "02.1.webp",
+        "02.2.webp",
+        "02.3.webp",
+        "02.4.webp",
+        "02.5.webp",
+        "02.6.webp",
+        "02.7.webp",
+        "02.8.webp",
+        "02.9.webp"
       ]
     },
     {
-      src: "03.png",
+      src: "03.webp",
       alt: "Vitasoy soy food producent presentation (project 2022)",
       style: "standard",
       behavior: "carousel",
       gallery: [
-        "03.1.png",
-        "03.2.png",
-        "03.3.png",
-        "03.4.png",
-        "03.5.png",
-        "03.6.png",
-        "03.7.png"
+        "03.1.webp",
+        "03.2.webp",
+        "03.3.webp",
+        "03.4.webp",
+        "03.5.webp",
+        "03.6.webp",
+        "03.7.webp"
       ]
     }
   ]

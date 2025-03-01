@@ -20,7 +20,7 @@ const iconSetsData: SectionData = {
       behavior: "static"
     },
     {
-      src: "03.png",
+      src: "03.webp",
       alt: "Fantastic flowers icon set",
       style: "standard",
       behavior: "static"
@@ -32,25 +32,25 @@ const iconSetsData: SectionData = {
       behavior: "static"
     },
     {
-      src: "05.png",
+      src: "05.webp",
       alt: "Chemistry lab icon set",
       style: "standard",
       behavior: "static"
     },
     {
-      src: "06.png",
+      src: "06.webp",
       alt: "Alternate chemistry lab icon set",
       style: "standard",
       behavior: "static"
     },
     {
-      src: "07.png",
+      src: "07.webp",
       alt: "Biology insects icon set",
       style: "standard",
       behavior: "static"
     },
     {
-      src: "08.png",
+      src: "08.webp",
       alt: "Fantasy game pets icons",
       style: "standard",
       behavior: "static"

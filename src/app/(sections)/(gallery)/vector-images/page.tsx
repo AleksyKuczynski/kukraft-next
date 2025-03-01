@@ -33,7 +33,7 @@ const vectorImagesData: SectionData = {
       alt: "Kaliningrad city navigation",
       style: "standard",
       behavior: "carousel",
-      gallery: ["04.1.png", "04.2.png"]
+      gallery: ["04.1.webp", "04.2.webp"]
     },
     {
       src: "05.svg",
@@ -74,7 +74,7 @@ const vectorImagesData: SectionData = {
       alt: "Butterflies",
       style: "standard",
       behavior: "carousel",
-      gallery: ["09.1.png", "09.2.png"]
+      gallery: ["09.1.webp", "09.2.webp"]
     },
     {
       src: "10.svg",
@@ -123,11 +123,11 @@ const vectorImagesData: SectionData = {
       gallery: ["15.1.svg"]
     },
     {
-      src: "16.png",
+      src: "16.webp",
       alt: "Woman's Day constructivist greeting card",
       style: "standard",
       behavior: "carousel",
-      gallery: ["16.1.jpg", "16.1.png"]
+      gallery: ["16.1.webp", "16.1.webp"]
     },
     {
       src: "17.svg",
@@ -137,11 +137,11 @@ const vectorImagesData: SectionData = {
       gallery: ["17.1.svg"]
     },
     {
-      src: "18.jpg",
+      src: "18.webp",
       alt: "Happy New Year",
       style: "standard",
       behavior: "modal",
-      gallery: ["18.1.jpg"]
+      gallery: ["18.1.webp"]
     },
     {
       src: "19.svg",

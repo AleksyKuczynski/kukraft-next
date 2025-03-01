@@ -58,31 +58,31 @@ const CardSection = ({ images, icons }: CardSectionProps) => (
 
 const cardSections = [
   {
-    images: ['01.1.jpg', '01.2.jpg', '01.3.jpg', '01.4.jpg'],
+    images: ['01.1.webp', '01.2.webp', '01.3.webp', '01.4.webp'],
     icons: ['NY.4.svg', 'NY.1.svg', 'NY.2.svg']
   },
   {
-    images: ['02.1.jpg', '02.2.jpg', '02.3.jpg', '02.4.jpg'],
+    images: ['02.1.webp', '02.2.webp', '02.3.webp', '02.4.webp'],
     icons: ['fest.4.svg', 'fest.1.svg', 'fest.2.svg']
   },
   {
-    images: ['03.1.jpg', '03.2.jpg', '03.3.jpg', '03.4.jpg'],
+    images: ['03.1.webp', '03.2.webp', '03.3.webp', '03.4.webp'],
     icons: ['SV.4.svg', 'SV.3.svg', 'SV.1.svg']
   },
   {
-    images: ['06.1.jpg', '06.3.jpg', '06.4.jpg', '06.2.jpg'],
+    images: ['06.1.webp', '06.3.webp', '06.4.webp', '06.2.webp'],
     icons: ['esther.3.svg', 'esther.1.svg', 'esther.5.svg']
   },
   {
-    images: ['09.1.jpg', '09.3.jpg', '09.2.jpg', '09.4.jpg'],
+    images: ['09.1.webp', '09.3.webp', '09.2.webp', '09.4.webp'],
     icons: ['zodiac.4.svg', 'zodiac.1.svg', 'zodiac.2.svg']
   },
   {
-    images: ['11.1.jpg', '11.2.jpg', '11.3.jpg', '11.4.jpg'],
+    images: ['11.1.webp', '11.2.webp', '11.3.webp', '11.4.webp'],
     icons: ['SV.4.svg', 'SV.3.svg', 'SV.2.svg']
   },
   {
-    images: ['12.1.jpg', '12.2.jpg', '12.3.jpg'],
+    images: ['12.1.webp', '12.2.webp', '12.3.webp'],
     icons: ['zodiac.1.svg', 'zodiac.4.svg', 'zodiac.5.svg']
   }
 ]

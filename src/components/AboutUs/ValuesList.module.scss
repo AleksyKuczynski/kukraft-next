@@ -26,7 +26,7 @@
   min-height: 3rem;
   margin-top: 1.5rem;
   padding-left: 7rem;
-  background: url('/img/sections/aboutus/duo.png') no-repeat 0;
+  background: url('/img/sections/aboutus/duo.webp') no-repeat 0;
   background-size: auto 3rem;
 }
 
@@ -37,12 +37,12 @@
   padding-left: 5rem;
 
   &:nth-child(even) {
-    background: url('/img/sections/aboutus/aleh.png') no-repeat 0;
+    background: url('/img/sections/aboutus/aleh.webp') no-repeat 0;
     background-size: auto 3rem;
   }
 
   &:nth-child(odd) {
-    background: url('/img/sections/aboutus/nat.png') no-repeat 0;
+    background: url('/img/sections/aboutus/nat.webp') no-repeat 0;
     background-size: auto 3rem;
   }
 }
