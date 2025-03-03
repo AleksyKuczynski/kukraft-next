@@ -157,7 +157,7 @@ export default function VectorImagesPage() {
   return (
     <GalleryPage
       data={vectorImagesData}
-      sectionName="patterns"
+      sectionName="vector-images"
       className={styles.vectorImagesGallery}
     />
   )

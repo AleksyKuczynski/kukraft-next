@@ -1,45 +1,92 @@
 // src/app/(sections)/greeting-cards/styles.module.scss
 .wholeCard {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .cardBox {
-    width: 100%;
-  }
-  
-  .cardContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.cardBox {
+  width: 100%;
+}
+
+// Regular container with multiple images
+.cardContainer {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1%; // Gap between rows
+  height: 300px; // Fixed row height
+  gap: 1%; // Gap between images
   
   .cardImage {
-    padding: 1%;
+    flex: 1; // Equal width distribution
+    position: relative;
+    height: 100%;
+    
+    // Ensure images maintain aspect ratio and don't get cropped
+    :global(span) {
+      display: block !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+    
+    :global(img) {
+      object-fit: contain !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+}
+
+// Special case for single image in row
+.cardContainerSingle {
+  @extend .cardContainer;
+  
+  .cardImage {
+    flex: 0 0 100%; // Take full width
+  }
+}
+
+.cardContainerThree {
+  @extend .cardContainer;
+  
+  .cardImage {
+    flex: 0 0 32.66%; // (100% - 2% for gaps) / 3 = 32.66%
+  }
+}
+
+.dividerBox {
+  width: 100%;
+  padding: 2% 0 5% 0;
+  display: flex;
+  justify-content: center;
+  
+  > div {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
     
     img {
-      max-width: 100%;
+      height: 3rem;
     }
   }
   
-  .dividerBox {
-    width: 100%;
-    padding: 2% 0 5% 0;
-    
-    div {
-      display: inline-block;
-      width: 25%;
-      
-      img {
-        height: 3rem;
-      }
-    }
-    
-    @media (max-width: 575.98px) {
-      div img {
-        height: 2rem;
-      }
+  @media (max-width: 575.98px) {
+    > div img {
+      height: 2rem;
     }
   }
+}
+
+// Media queries for responsive behavior
+@media (max-width: 767.98px) {
+  .cardContainer, .cardContainerSingle {
+    height: 240px; // Shorter rows on smaller screens
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cardContainer, .cardContainerSingle {
+    height: 180px; // Even shorter on mobile
+  }
+}
