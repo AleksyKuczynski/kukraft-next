@@ -10,48 +10,28 @@
   width: 100%;
 }
 
-// Regular container with multiple images
 .cardContainer {
   width: 100%;
   display: flex;
   margin-bottom: 1%; // Gap between rows
-  height: 300px; // Fixed row height
   gap: 1%; // Gap between images
   
   .cardImage {
-    flex: 1; // Equal width distribution
     position: relative;
-    height: 100%;
+    // flex will be set inline based on calculations
     
-    // Ensure images maintain aspect ratio and don't get cropped
+    // Make sure Next.js Image component renders properly
     :global(span) {
       display: block !important;
       width: 100% !important;
-      height: 100% !important;
+      height: auto !important;
     }
     
     :global(img) {
-      object-fit: contain !important;
+      display: block !important;
       width: 100% !important;
-      height: 100% !important;
+      height: auto !important;
     }
-  }
-}
-
-// Special case for single image in row
-.cardContainerSingle {
-  @extend .cardContainer;
-  
-  .cardImage {
-    flex: 0 0 100%; // Take full width
-  }
-}
-
-.cardContainerThree {
-  @extend .cardContainer;
-  
-  .cardImage {
-    flex: 0 0 32.66%; // (100% - 2% for gaps) / 3 = 32.66%
   }
 }
 
@@ -75,18 +55,5 @@
     > div img {
       height: 2rem;
     }
-  }
-}
-
-// Media queries for responsive behavior
-@media (max-width: 767.98px) {
-  .cardContainer, .cardContainerSingle {
-    height: 240px; // Shorter rows on smaller screens
-  }
-}
-
-@media (max-width: 575.98px) {
-  .cardContainer, .cardContainerSingle {
-    height: 180px; // Even shorter on mobile
   }
 }
