@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021.5 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30.8503mm" height="36.9784mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 771.64 924.92"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:#E23324;stroke-width:25.01;stroke-miterlimit:22.9256}
+    .str0 {stroke:#0C7841;stroke-width:25.01;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil0 {fill:#0C7841}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" transform="matrix(0.404875 0.319273 -0.752313 0.954019 399.223 400.289)" width="52.9" height="538.01" rx="27.51" ry="27.51"/>
+  <ellipse class="fil1 str0" transform="matrix(1.10579 0.0777462 -0.0591552 0.841371 173.269 490.363)" rx="34.71" ry="241.99"/>
+  <ellipse class="fil1 str0" transform="matrix(-0.333433 -1.05719 -0.804388 0.253701 443.768 579.55)" rx="34.71" ry="241.99"/>
+  <path class="fil1 str1" d="M759.02 167.44c-7.94,48.67 -31.11,101.33 -68.77,149.09 -84.78,107.51 -210.81,149.46 -281.5,93.72 -70.7,-55.75 -59.28,-188.09 25.5,-295.59 37.53,-47.6 83.16,-82.33 128.48,-101.44 2.94,-1.24 6.09,-0.83 8.61,1.13 2.52,1.96 3.7,4.9 3.23,8.06l-12.65 84.59c-0.48,3.18 0.73,6.15 3.28,8.1 2.55,1.95 5.73,2.34 8.67,1.05l76.01 -33.35c2.93,-1.29 6.1,-0.91 8.65,1.02 2.55,1.93 3.76,4.88 3.32,8.05l-12.58 88.98c-0.44,3.08 0.69,5.94 3.12,7.9 2.42,1.95 5.46,2.45 8.38,1.37l86.79 -32.12c2.95,-1.09 6.02,-0.57 8.45,1.43 2.43,2 3.53,4.91 3.02,8.02z"/>
+ </g>
+</svg>
