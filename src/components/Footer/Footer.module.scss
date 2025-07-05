@@ -1,0 +1,51 @@
+// src/components/Footer/Footer.module.scss
+@use '@/styles/scss/variables' as *;
+
+// Footer
+.footer {
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.footerContainer {
+  background-color: $color-background-alt;
+  border-top: solid $color-border 1px;
+  margin: 0;
+  padding: 1rem;
+}
+
+.footerText {
+  margin: 1rem;
+  padding: 0.2rem 1rem;
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+.footerSeparator {
+  display: none;
+  background-image: url('/img/kk.svg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 28px;
+}
+
+// Media Queries
+@media (min-width: 576px) {
+  .footerContainer {
+    margin: 0;
+  }
+
+  .footerSeparator {
+    display: block;
+  }
+
+  .footerRow {
+    padding: 2rem 0;
+  }
+
+  .footerText {
+    padding: 0 1rem;
+    font-size: .8rem;
+  }
+}

@@ -1,0 +1,102 @@
+// src/components/Navigation/Navigation.module.scss
+@use '@/styles/scss/variables' as *;
+
+// Header & Navigation
+.navbar {
+  padding-top: 0;
+  opacity: 0.89;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  padding-bottom: 0.5rem;
+  background-color: $color-background;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 1.5rem;
+  background-size: 64px;
+  touch-action: pan-y;
+}
+
+.navLink {
+  padding-right: 1rem;
+  padding-left: 2rem;
+  color: $color-primary;
+  padding: 0;
+  border-bottom: solid $color-primary 1px;
+
+  &:hover {
+    color: $color-text;
+    border-color: $color-text;
+  }
+
+  &:active {
+    color: $color-primary;
+    border-color: $color-primary;
+  }
+}
+
+.navLinkActive {
+  padding-bottom: 0;
+  border-bottom: solid 3px;
+  
+  &:hover {
+    cursor: default;
+  }
+}
+
+.navBrand {
+  padding: 1rem 2rem 1rem 2rem;
+
+  &:hover {
+    color: $color-text;
+  }
+}
+
+.navItem {
+  padding: .5rem 2rem .5rem 0;
+}
+
+.navToggler {
+  margin-right: 2rem;
+  padding: 0;
+  border: 0;
+
+  img {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+// Media Queries
+@media (min-height: 640px) {
+  .navbar {
+    font-size: 15px;
+  }
+  
+  .navItem {
+    padding: 1rem 2rem .5rem 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    margin: 0;
+    font-size: 15px;
+    background-image: none;
+  }
+
+  .navBrand {
+    margin: 0;
+    padding: 0.4rem 0 0 2rem;
+  }
+
+  .navItem {
+    padding: 1rem 0 0 1.5rem;
+  }
+
+  .navLink {
+    padding: 0;
+    border-bottom: solid $color-primary 1px;
+    text-align: center;
+  }
+}
