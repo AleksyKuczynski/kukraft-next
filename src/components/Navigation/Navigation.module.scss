@@ -15,10 +15,12 @@
   touch-action: pan-y;
 }
 
-// Collapsible navigation menu
-.navCollapse {
+.navbar-collapse {
+      flex-basis: auto; // Override Bootstrap's flex-basis: 100%
+
   // Apply styles when menu is expanded (has .show class)
   &.show {
+    width: 300px; // Or whatever fixed width you want
     border: 1px solid $color-border;
     border-radius: 0.375rem;
     background-color: $color-background-alt;
