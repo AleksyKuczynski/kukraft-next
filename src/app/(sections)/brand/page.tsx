@@ -39,7 +39,7 @@ const BrandSection = ({ bgColor, mainImages, additionalImages }: BrandSectionPro
 
 const brandSections = [
     {
-      bgColor: '#88d8d6', // Argo stevedoring
+      bgColor: '#b8d8d6', // Argo stevedoring
       mainImages: ['01.1.svg', '01.2.svg', '01.3.svg'],
       additionalImages: ['01.4.svg', '01.5.svg']
     },
@@ -49,7 +49,7 @@ const brandSections = [
       additionalImages: ['04.4.svg', '04.5.svg']
     },
     {
-      bgColor: '#e1c8c1', // Vitasoy
+      bgColor: '#a6e6a6', // Vitasoy
       mainImages: ['06.1.svg', '06.2.svg', '06.3.svg'],
       additionalImages: ['06.4.svg', '06.5.svg']
     },
@@ -59,7 +59,7 @@ const brandSections = [
       additionalImages: ['03.4.svg', '03.5.svg']
     },
     {
-      bgColor: '#dcdfe0', // Fa mineur
+      bgColor: '#ddd3ce', // Fa mineur
       mainImages: ['05.1.svg', '05.2.svg', '05.3.svg'],
       additionalImages: ['05.4.svg', '05.5.svg']
     },
