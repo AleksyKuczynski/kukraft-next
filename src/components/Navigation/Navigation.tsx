@@ -32,7 +32,7 @@ export const Navigation = () => {
               <img src="/img/interface/toggle.svg" width="34" alt="" />
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav me-auto mb-2 mb-xl-0">
+              <ul className="navbar-nav">
                 {categories.map((category) => {
                   const isActive = pathname === category.path;
                   return (
