@@ -18,10 +18,11 @@
 }
 
 .navLink {
+  margin: 0 2rem;
+  padding: 0;
   padding-right: 1rem;
   padding-left: 2rem;
   color: $color-primary;
-  padding: 0;
   border-bottom: solid $color-primary 1px;
 
   &:hover {
