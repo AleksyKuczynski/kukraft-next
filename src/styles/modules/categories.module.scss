@@ -8,10 +8,9 @@
   }
   
   &.active-nav {
-    font-style: italic;
-    font-weight: 400;
     color: $color !important;
     border-color: $color !important;
+    border-bottom: 2px solid !important;
     cursor: default;
     
     &:hover {

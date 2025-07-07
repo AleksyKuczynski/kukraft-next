@@ -1,4 +1,4 @@
-// src/app/(sections)/layout.module.scss
+// src/components/Navigation/Navigation.module.scss
 @use '@/styles/scss/variables' as *;
 
 // Header & Navigation
@@ -13,6 +13,10 @@
   background-position-y: 1.5rem;
   background-size: 64px;
   touch-action: pan-y;
+}
+
+.navbar-nav {
+  display: flex;
 }
 
 .navLink {
@@ -51,7 +55,7 @@
 }
 
 .navItem {
-  padding: .5rem 2rem .5rem 0;
+  padding: .25rem 2rem .25rem 0;
 }
 
 .navToggler {
@@ -65,16 +69,43 @@
   }
 }
 
-// Main Section
-.mainSection {
-  padding: 5rem 0 1rem;
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
+// Media Queries
+@media (min-height: 640px) {
+  .navbar {
+    font-size: 15px;
+  }
+  
+  .navItem {
+    padding: 1rem 2rem .5rem 0;
+  }
 }
 
-.contentRow {
-  padding: 1.5rem;
-  padding-top: 2.5rem;
-  text-align: center;
+@media (max-width: 1199.99px) {
+  .navItem{
+    width: 200px;
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    margin: 0;
+    font-size: 15px;
+    background-image: none;
+  }
+
+  .navBrand {
+    margin: 0;
+    padding: 0.4rem 0 0 2rem;
+  }
+
+  .navItem {
+    padding: 1rem 0 0 1rem;
+  }
+
+  .navLink {
+    padding: 0;
+    border-bottom: solid $color-primary 1px;
+    text-align: center;
+  }
 }
