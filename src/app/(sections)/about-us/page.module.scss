@@ -6,6 +6,12 @@
   background-color: $color-background;
   min-height: 100vh;
   padding: 5rem 0 1rem;
+  overflow-x: hidden; // Prevent horizontal scroll
+}
+
+.aboutUsSection {
+  overflow-x: hidden; // Prevent horizontal scroll
+  width: 100%;
 }
 
 // Language selector styling

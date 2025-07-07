@@ -32,7 +32,25 @@
 .slide { @include category-style($color-slide); }
 .toys { @include category-style($color-toys); }
 .greeting { @include category-style($color-greeting); }
-.about { @include category-style($color-aboutus); }
+
+// Special case for About Us - transparent background but keep nav colors
+.about { 
+  &.button {
+    background-color: transparent;
+  }
+  
+  &.active-nav {
+    color: $color-aboutus !important;
+    border-color: $color-aboutus !important;
+    border-bottom: 2px solid !important;
+    cursor: default;
+    
+    &:hover {
+      color: $color-aboutus !important;
+      border-color: $color-aboutus !important;
+    }
+  }
+}
 
 // Button base class for homepage
 .button {

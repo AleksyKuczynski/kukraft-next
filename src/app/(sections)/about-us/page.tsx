@@ -1,11 +1,11 @@
-// src/app/about-us/page.tsx
+// src/app/(sections)/about-us/page.tsx
 import { aboutUsContent } from '@/data/aboutUsContent'
 import { LanguageSection } from '@/components/AboutUs/LanguageSection'
 import styles from './page.module.scss'
 
 export default function AboutUs() {
   return (
-    <section>
+    <section className={styles.aboutUsSection}> {/* Add wrapper class */}
       <div className="container-fluid">
         <div className="row">
           <div className={styles.langSelector}>
