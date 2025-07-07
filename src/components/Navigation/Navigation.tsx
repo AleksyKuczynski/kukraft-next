@@ -2,6 +2,7 @@
 'use client'
 
 import Script from 'next/script'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import styles from './Navigation.module.scss'
@@ -18,7 +19,13 @@ export const Navigation = () => {
         <div className="container">
           <nav className={`${styles.navbar} navbar navbar-expand-xl fixed-top`}>
             <Link className={`${styles.navBrand} navbar-brand`} href="/">
-              <img src="/img/kk.svg" width="34" alt="" />
+              <Image 
+                src="/img/kk.svg" 
+                alt="KuKraft Logo" 
+                width={34} 
+                height={34}
+                priority
+              />
             </Link>
             <button 
               className={`${styles.navToggler} navbar-toggler`}
@@ -29,7 +36,12 @@ export const Navigation = () => {
               aria-expanded="false" 
               aria-label="Toggle navigation"
             >
-              <img src="/img/interface/toggle.svg" width="34" alt="" />
+              <Image 
+                src="/img/interface/toggle.svg" 
+                alt="Menu Toggle" 
+                width={34} 
+                height={34}
+              />
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">

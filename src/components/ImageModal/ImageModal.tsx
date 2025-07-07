@@ -2,6 +2,7 @@
 'use client'
 
 import { FC } from 'react'
+import Image from 'next/image'
 import styles from './ImageModal.module.scss'
 
 interface ImageModalProps {
@@ -42,7 +43,12 @@ export const ImageModal: FC<ImageModalProps> = ({
               data-bs-dismiss="offcanvas" 
               aria-label="Close"
             >
-              <img src="/img/interface/close.svg" alt="Close" />
+              <Image 
+                src="/img/interface/close.svg" 
+                alt="Close" 
+                width={24} 
+                height={24}
+              />
             </button>
           </div>
           <div className="offcanvas-body">
@@ -61,7 +67,12 @@ export const ImageModal: FC<ImageModalProps> = ({
               data-bs-target={`#${carouselId}`}
               data-bs-slide="prev"
             >
-              <img src="/img/interface/left.svg" alt="Previous" />
+              <Image 
+                src="/img/interface/left.svg" 
+                alt="Previous" 
+                width={24} 
+                height={24}
+              />
             </button>
             <button 
               type="button" 
@@ -69,7 +80,12 @@ export const ImageModal: FC<ImageModalProps> = ({
               data-bs-dismiss="offcanvas" 
               aria-label="Close"
             >
-              <img src="/img/interface/close.svg" alt="Close" />
+              <Image 
+                src="/img/interface/close.svg" 
+                alt="Close" 
+                width={24} 
+                height={24}
+              />
             </button>
             <button
               type="button"
@@ -77,7 +93,12 @@ export const ImageModal: FC<ImageModalProps> = ({
               data-bs-target={`#${carouselId}`}
               data-bs-slide="next"
             >
-              <img src="/img/interface/right.svg" alt="Next" />
+              <Image 
+                src="/img/interface/right.svg" 
+                alt="Next" 
+                width={24} 
+                height={24}
+              />
             </button>
           </div>
 
@@ -101,10 +122,13 @@ export const ImageModal: FC<ImageModalProps> = ({
                   key={index}
                   className={`carousel-item ${index === 0 ? 'active' : ''}`}
                 >
-                  <img 
+                  <Image 
                     src={`/img/sections/${sectionName}/${image}`}
                     className={styles.imgCarousel}
                     alt={`${alt}${index > 0 ? ` - ${index + 1}` : ''}`}
+                    width={800}
+                    height={600}
+                    style={{ objectFit: 'contain' }}
                   />
                 </div>
               ))}
